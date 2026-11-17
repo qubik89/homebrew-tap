@@ -15,6 +15,7 @@ cask "mic-control" do
   end
 
   depends_on arch: :arm64
+  depends_on :macos
 
   app "DJI Mic Control.app"
 
