@@ -2,8 +2,7 @@ cask "mic-control" do
   version "1.3.0"
   sha256 "eaed556f19ea8450bd6e36c8eade36c205e4869c51c18f62da8b23dfef49a6c7"
 
-  url "https://github.com/qubik89/DJIMic3/releases/download/v#{version}/DJI-Mic-Control_macOS_arm64.dmg",
-      verified: "github.com/qubik89/DJIMic3/"
+  url "https://github.com/qubik89/DJIMic3/releases/download/v#{version}/DJI-Mic-Control_macOS_arm64.dmg"
   name "Mic Control"
   name "DJI Mic Control"
   desc "Control DJI wireless microphones from the computer over USB"
