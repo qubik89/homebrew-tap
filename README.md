@@ -11,13 +11,10 @@ Mic Mini) from the computer over USB. Source:
 brew install --cask qubik89/tap/mic-control
 ```
 
-The app is for Apple Silicon Macs. It isn't signed or notarized by Apple yet,
-so macOS may say it "is damaged and can't be opened". Clear the quarantine
-flag once after installing:
-
-```bash
-xattr -dr com.apple.quarantine "/Applications/DJI Mic Control.app"
-```
+For Apple Silicon Macs. Since 1.4.0 the app is signed with a Developer ID and
+notarized by Apple, so it opens normally. Connect the receiver with a USB-C
+cable and open **DJI Mic Control**. Setup guide:
+[miccontrol.app/en/dji-mic-3-mac/](https://miccontrol.app/en/dji-mic-3-mac/?ref=homebrew-tap).
 
 ## Update and remove
 
@@ -33,7 +30,5 @@ brew uninstall --zap --cask mic-control   # also removes settings and caches
 repository: by the release workflow after each release (when the
 `HOMEBREW_TAP_TOKEN` secret is set), or by hand with
 `./build-release.sh --update-cask <dmg> <path to this checkout>`.
-
-When the macOS release is signed and notarized, remove the `caveats` block.
 
 Not affiliated with or endorsed by DJI.

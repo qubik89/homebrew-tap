@@ -1,6 +1,6 @@
 cask "mic-control" do
-  version "1.3.0"
-  sha256 "eaed556f19ea8450bd6e36c8eade36c205e4869c51c18f62da8b23dfef49a6c7"
+  version "1.4.0"
+  sha256 "ef97fda2523a8ef24e64dacbd1aee3458110b4de1444aa41993f8bc36736722d"
 
   url "https://github.com/qubik89/DJIMic3/releases/download/v#{version}/DJI-Mic-Control_macOS_arm64.dmg"
   name "Mic Control"
@@ -26,14 +26,4 @@ cask "mic-control" do
     "~/Library/WebKit/djimic-gui",
     "~/Library/WebKit/org.djimic.control",
   ]
-
-  caveats <<~EOS
-    Mic Control is not signed or notarized by Apple yet, so macOS may say it
-    "is damaged and can't be opened". Clear the quarantine flag once:
-
-      xattr -dr com.apple.quarantine "#{appdir}/DJI Mic Control.app"
-
-    Then connect the receiver with a USB-C cable and open the app.
-    Setup guide: https://miccontrol.app/en/dji-mic-3-mac/?ref=homebrew
-  EOS
 end
