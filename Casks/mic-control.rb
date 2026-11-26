@@ -1,6 +1,6 @@
 cask "mic-control" do
-  version "1.6.0"
-  sha256 "7268429300924ecbc943b8a9e608db5e0b811db1abb3279e752f46e8a8b34de9"
+  version "1.7.0"
+  sha256 "d6e379e9106b395fd70c55579b50da2edc50811502a6be1626be2b9649c7a0b0"
 
   url "https://github.com/qubik89/DJIMic3/releases/download/v#{version}/DJI-Mic-Control_macOS_arm64.dmg"
   name "Mic Control"
